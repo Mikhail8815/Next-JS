@@ -1,5 +1,10 @@
+import Heading from "../components/Heading";
+import styles from '../styles/Home.module.scss';
+
 const Home = () => (
-  <h1>Hello world!</h1>
+    <div className={styles.wrapper}>
+        <Heading text="Next.js Application"/>
+    </div>
 );
 
 export default Home;
