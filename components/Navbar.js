@@ -18,7 +18,7 @@ const Navbar = () => {
             </div>
             <div className={styles.links}>
                 {navigation.map(({ id, title, path }) => (
-                    <Link key={id} href={path}>
+                    <Link legacyBehavior  key={id} href={path}>
                         <a className={pathname === path ? styles.active : null}>{title}</a>
                     </Link>
                 ))}
